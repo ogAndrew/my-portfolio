@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Section, Title, Text, Span } from "../../components/Core";
 import imgPhoto from "../../assets/image/jpg/talle-pic-small.jpg";
-import imgSignLight from "../../assets/image/png/signature.png";
+
 
 const LinkSocial = styled.a`
   color: ${({ theme }) => theme.colors.light} !important;
