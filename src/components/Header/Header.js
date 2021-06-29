@@ -8,8 +8,10 @@ import GlobalContext from "../../context/GlobalContext";
 import Offcanvas from "../Offcanvas";
 import NestedMenu from "../NestedMenu";
 import { device } from "../../utils";
-import Logo from "../Logo";
+
 import { menuItems } from "./menuItems";
+
+import { Text } from "../Core";
 
 const SiteHeader = styled.header`
   padding: 0;
@@ -236,7 +238,7 @@ const Header = ({ isDark }) => {
           <nav className="navbar px-0 px-md-3 site-navbar offcanvas-active navbar-expand-lg navbar-light">
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo">
-              <Logo color={isDark ? "light" : "dark"} />
+              <Link to="/">Andrew</Link>
             </div>
             <div className="collapse navbar-collapse">
               <div className="navbar-nav ml-lg-auto mr-3">

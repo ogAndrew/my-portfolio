@@ -13,24 +13,20 @@ const WorkSingle = () => {
   return (
     <>
       <PageWrapper>
-        <Container
-          fluid
-          className="px-sm-5"
+        <Section
+          className="mt-lg-5"
           css={`
-            margin-top: 92px;
+            padding-bottom: 20px;
           `}
         >
-          <img src={imgWorkCover} alt="" className="img-fluid w-100" />
-        </Container>
-        <Section className="mt-lg-5">
           <Container>
             <Row>
               <Col lg="8">
                 <Text variant="tag">Destiny Chooser</Text>
                 <Title variant="secSm" className="my-4">
-                  A Star Wars themed dark side toggle{" "}
+                  A Star Wars themed dark-side toggle{" "}
                 </Title>
-                <Text variant="lg" className="my-2">
+                <Text variant="tag" className="my-2">
                   Project Background
                 </Text>
                 <Text
@@ -48,12 +44,17 @@ const WorkSingle = () => {
                   card components, using overlay for navigation, and
                   implementing the toggler from scratch.
                 </Text>
+                <Text variant="p">
+                  <Link to="https://ogandrew.github.io/destiny-chooser/">
+                    View live demo.
+                  </Link>
+                </Text>
               </Col>
             </Row>
             <Row>
               <Col lg="8">
                 {" "}
-                <Text variant="lg" className="my-2">
+                <Text variant="tag" className="mt-4 my-2">
                   Tech Specs
                 </Text>
                 <Text variant="p" className="my-2">
@@ -61,36 +62,40 @@ const WorkSingle = () => {
                 </Text>
               </Col>
             </Row>
-          </Container>
-        </Section>
-        <div className="mt-lg-3">
-          <Container>
-            <Row>
-              <Col lg="4" className="mb-4 mb-lg-0">
+
+            <Row className="mt-4">
+              <Col lg="3" className="mb-4 mb-lg-0">
                 <Text variant="tag">Project Type</Text>
                 <Title variant="cardBig" className="mt-3">
                   Personal
                 </Title>
               </Col>
-              <Col lg="4" className="mb-4 mb-lg-0">
+              <Col lg="3" className="mb-4 mb-lg-0">
                 <Text variant="tag">Time</Text>
                 <Title variant="cardBig" className="mt-3">
                   January 2021
                 </Title>
               </Col>
-              <Col lg="2">
-                <Link to="https://ogandrew.github.io/destiny-chooser/">
-                  <Button arrowRight>Live Demo</Button>
-                </Link>
-              </Col>
+
+              <Col lg="2"></Col>
               <Col lg="2">
                 <Link to="https://github.com/ogAndrew/jedi-sith">
-                  <Button arrowRight>Github</Button>
+                  <Button arrowRight>View code</Button>
                 </Link>
               </Col>
             </Row>
           </Container>
-        </div>
+        </Section>
+
+        <Container
+          fluid
+          className="px-sm-5"
+          css={`
+            margin-top: 92px;
+          `}
+        >
+          <img src={imgWorkCover} alt="" className="img-fluid w-100" />
+        </Container>
 
         <Box py={4}>
           <Contact />

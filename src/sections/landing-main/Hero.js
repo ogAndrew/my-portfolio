@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import GlobalContext from "../../context/GlobalContext";
 import { Title, ButtonIcon, Section, Box } from "../../components/Core";
 import bgHeroPattern from "../../assets/image/webp/hero-pattern.webp";
-// import imgL from '../../assets/image/jpg/portfolio-about-3.jpg'
+
 import imgL from "../../assets/image/jpg/talle-pic-small.jpg";
 
 const SectionStyled = styled(Section)`
@@ -35,6 +35,7 @@ const Hero = () => {
               alt=""
               css={`
                 border-radius: 50rem !important;
+                width: 20%;
               `}
             />
           </Box>
@@ -56,6 +57,9 @@ const Hero = () => {
                 </ButtonIcon>
               </Box>
             </Col>
+          </Row>
+          <Row>
+            
           </Row>
         </Container>
       </SectionStyled>

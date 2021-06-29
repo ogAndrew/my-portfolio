@@ -13,15 +13,6 @@ const WorkSingle = () => {
   return (
     <>
       <PageWrapper>
-        <Container
-          fluid
-          className="px-sm-5"
-          css={`
-            margin-top: 92px;
-          `}
-        >
-          <img src={imgWorkCover} alt="" className="img-fluid w-100" />
-        </Container>
         <Section className="mt-lg-5">
           <Container>
             <Row>
@@ -30,7 +21,7 @@ const WorkSingle = () => {
                 <Title variant="secSm" className="my-4">
                   The app that taught me how magical component libraries are{" "}
                 </Title>
-                <Text variant="lg" className="my-2">
+                <Text variant="tag" className="my-2">
                   Project Background
                 </Text>
                 <Text
@@ -46,12 +37,17 @@ const WorkSingle = () => {
                   reuse components across multiple pages to keep the code super
                   DRY!
                 </Text>
+                <Text variant="p">
+                  <Link to="https://netflix-andrew.web.app/#">
+                    View live demo.
+                  </Link>
+                </Text>
               </Col>
             </Row>
             <Row>
               <Col lg="8">
                 {" "}
-                <Text variant="lg" className="my-2">
+                <Text variant="tag" className="mt-4 my-2">
                   Tech Specs
                 </Text>
                 <Text variant="p" className="my-2">
@@ -60,11 +56,7 @@ const WorkSingle = () => {
                 </Text>
               </Col>
             </Row>
-          </Container>
-        </Section>
-        <div className="mt-lg-3">
-          <Container>
-            <Row>
+            <Row className="mt-4">
               <Col lg="4" className="mb-4 mb-lg-0">
                 <Text variant="tag">Project Type</Text>
                 <Title variant="cardBig" className="mt-3">
@@ -77,11 +69,7 @@ const WorkSingle = () => {
                   October 2020
                 </Title>
               </Col>
-              <Col lg="2">
-                <Link to="https://netflix-andrew.web.app/#">
-                  <Button arrowRight>Live Demo</Button>
-                </Link>
-              </Col>
+
               <Col lg="2">
                 <Link to="https://github.com/ogAndrew/netflix-clone">
                   <Button arrowRight>Github</Button>
@@ -89,7 +77,16 @@ const WorkSingle = () => {
               </Col>
             </Row>
           </Container>
-        </div>
+        </Section>
+        <Container
+          fluid
+          className="px-sm-5"
+          css={`
+            margin-top: 92px;
+          `}
+        >
+          <img src={imgWorkCover} alt="" className="img-fluid w-100" />
+        </Container>
 
         <Box py={4}>
           <Contact />

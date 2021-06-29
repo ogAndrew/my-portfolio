@@ -13,24 +13,15 @@ const WorkSingle = () => {
   return (
     <>
       <PageWrapper>
-        <Container
-          fluid
-          className="px-sm-5"
-          css={`
-            margin-top: 92px;
-          `}
-        >
-          <img src={imgWorkCover} alt="" className="img-fluid w-100" />
-        </Container>
         <Section className="mt-lg-5">
           <Container>
             <Row>
               <Col lg="8">
                 <Text variant="tag">Devcamper API</Text>
                 <Title variant="secSm" className="my-4">
-                  Node js API for a hypothetical bootcamp directory
+                  Node.js API for a hypothetical bootcamp directory
                 </Title>
-                <Text variant="lg" className="my-2">
+                <Text variant="tag" className="my-2">
                   Project Background
                 </Text>
                 <Text
@@ -77,12 +68,15 @@ const WorkSingle = () => {
                     </li>
                   </ul>
                 </Text>
+                <Text variant="p">
+                  <Link to="http://143.198.157.97/">View live demo.</Link>
+                </Text>
               </Col>
             </Row>
             <Row>
               <Col lg="8">
                 {" "}
-                <Text variant="lg" className="my-2">
+                <Text variant="tag" className="my-2">
                   Tech Specs
                 </Text>
                 <Text variant="p" className="my-2">
@@ -91,34 +85,39 @@ const WorkSingle = () => {
                 </Text>
               </Col>
             </Row>
-          </Container>
-        </Section>
-        <div className="mt-lg-3">
-          <Container>
-            <Row>
-              <Col lg="4" className="mb-4 mb-lg-0">
+            <Row className="mt-4">
+              <Col lg="4">
                 <Text variant="tag">Project Type</Text>
                 <Title variant="cardBig" className="mt-3">
-                  Personal
+                  Online Course
                 </Title>
               </Col>
               <Col lg="4" className="mb-4 mb-lg-0">
                 <Text variant="tag">Time</Text>
                 <Title variant="cardBig" className="mt-3">
-                  January 2021
+                  February 2021
                 </Title>
               </Col>
               <Col lg="2">
-                <Link to="https://ogandrew.github.io/destiny-chooser/">
-                  <Button arrowRight>Live Demo</Button>
-                </Link>
-              </Col>
-              <Col lg="2">
-                <Link to="https://github.com/ogAndrew/jedi-sith">
+                <Link to="https://github.com/ogAndrew/devcamper-api">
                   <Button arrowRight>Github</Button>
                 </Link>
               </Col>
             </Row>
+          </Container>
+        </Section>
+
+        <div className="mt-lg-3">
+          <Container></Container>
+
+          <Container
+            fluid
+            className="px-sm-5"
+            css={`
+              margin-top: 92px;
+            `}
+          >
+            <img src={imgWorkCover} alt="" className="img-fluid w-100" />
           </Container>
         </div>
 

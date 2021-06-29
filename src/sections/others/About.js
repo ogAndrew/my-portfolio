@@ -42,12 +42,12 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                     line-height: 1.5;
                   `}
                 >
-                  Software Developer based in Denver, Co. I am an independent
-                  contractor specializing in the JavaScript ecosystem.
+                  Hey! I'm OG(original ginger) Andrew, a software developer based in Denver, CO.
+                  Previously @IBM + @deepspacerobots.
                 </Text>
                 <Text color="light" className="mt-4">
-                  I strive to write clean code in a timely manner that leaves
-                  the client satisfied.
+                  I am currently on the hunt for my next opportunity. Available
+                  for hire.
                 </Text>
                 <div className="mt-4">
                   <Text color="light">Email me at</Text>
@@ -61,15 +61,7 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                     </a>
                   </Text>
                 </div>
-                <div className="mt-5">
-                  <img src={imgSignLight} alt="sign" className="img-fluid" />
-                </div>
-                <Text color="light" className="mt-3 font-weight-bold">
-                  Andrew Talle
-                </Text>
-                <Text color="light" variant="small">
-                  Founder of OG Andrew LLC
-                </Text>
+
                 <div className="mt-5 d-flex">
                   <LinkSocial
                     href="https://www.linkedin.com/in/andrewtalle/"

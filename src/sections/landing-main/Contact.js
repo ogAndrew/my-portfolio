@@ -15,7 +15,7 @@ const Hero = () => {
           <Row className="text-center justify-content-center">
             <Col lg="10" xl="7">
               <div className="text-center mb-5">
-                <Title variant="hero">Ready to talk?</Title>
+                <Title variant="hero">Looking for new opportunites</Title>
               </div>
               <div className="text-center">
                 <ButtonIcon

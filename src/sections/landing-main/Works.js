@@ -142,9 +142,6 @@ const Works = () => {
               </Col>
             ))}
           </Grid>
-          <Box pt="3rem" className="text-center">
-            <ButtonOutline>Load more works</ButtonOutline>
-          </Box>
         </Container>
       </Section>
     </>

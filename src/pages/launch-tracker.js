@@ -13,24 +13,15 @@ const WorkSingle = () => {
   return (
     <>
       <PageWrapper>
-        <Container
-          fluid
-          className="px-sm-5"
-          css={`
-            margin-top: 92px;
-          `}
-        >
-          <img src={imgWorkCover} alt="" className="img-fluid w-100" />
-        </Container>
         <Section className="mt-lg-5">
           <Container>
             <Row>
               <Col lg="8">
                 <Text variant="tag">NASA Launch Tracker</Text>
                 <Title variant="secSm" className="my-4">
-                  To Infinity and Beyond{" "}
+                  To infinity and beyond with Node.js{" "}
                 </Title>
-                <Text variant="lg" className="my-2">
+                <Text variant="tag" className="my-2">
                   Project Background
                 </Text>
                 <Text
@@ -51,7 +42,7 @@ const WorkSingle = () => {
             <Row>
               <Col lg="8">
                 {" "}
-                <Text variant="lg" className="my-2">
+                <Text variant="tag" className="mt-4 my-2">
                   Tech Specs
                 </Text>
                 <Text variant="p" className="my-2">
@@ -60,11 +51,7 @@ const WorkSingle = () => {
                 </Text>
               </Col>
             </Row>
-          </Container>
-        </Section>
-        <div className="mt-lg-3">
-          <Container>
-            <Row>
+            <Row className="mt-4">
               <Col lg="4" className="mb-4 mb-lg-0">
                 <Text variant="tag">Project Type</Text>
                 <Title variant="cardBig" className="mt-3">
@@ -85,7 +72,16 @@ const WorkSingle = () => {
               </Col>
             </Row>
           </Container>
-        </div>
+        </Section>
+        <Container
+          fluid
+          className="px-sm-5"
+          css={`
+            margin-top: 92px;
+          `}
+        >
+          <img src={imgWorkCover} alt="" className="img-fluid w-100" />
+        </Container>
 
         <Box py={4}>
           <Contact />

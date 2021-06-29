@@ -1,8 +1,7 @@
 import netflixThumbnail from "../assets/image/projects/netflix/netflix-landing.png";
 import destinyThumbnail from "../assets/image/projects/destiny-chooser/dark-side.png";
 import devcamperThumbnail from "../assets/image/projects/devcamper/devcamper-collection.png";
-import yellowboxThumbnail from "../assets/image/projects/yellowbox/yellowbox-logo.png";
-import unitelifeThumbnail from "../assets/image/projects/unite-life/unitelife-logo.png";
+import deepSpaceRobotsThumbnail from "../assets/image/projects/deep-space/deep-space-landing.png";
 import launchThumbnail from "../assets/image/projects/launch-tracker/launch-history.png";
 import zipfinderThumbnail from "../assets/image/projects/zip-finder/zip-finder-bar.png";
 
@@ -24,21 +23,14 @@ export const mainWorks = [
     link: "/destiny-chooser",
   },
   {
-    brand: `Unite Life`,
-    slug: `unite-life`,
-    title: `Custom platform for a non-profit while under contract at Deep Space Robots`,
+    brand: `Deep Space Robots`,
+    slug: `deep-space-robots`,
+    title: `Creative agency I contracted for on multiple mvp platforms over the course of 3 months.`,
     categories: [`react`],
-    thumbnail: unitelifeThumbnail,
-    link: "/unite-life",
+    thumbnail: deepSpaceRobotsThumbnail,
+    link: "/deep-space-robots",
   },
-  {
-    brand: "Yellowbox",
-    slug: "yellowbox",
-    title: "Yellowbox real estate training registration application.",
-    categories: [`react`, `Strapi`],
-    thumbnail: yellowboxThumbnail,
-    link: "/yellowbox",
-  },
+
   {
     brand: `Devcamper API`,
     slug: `devcamper-api`,
