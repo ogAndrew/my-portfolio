@@ -38,7 +38,7 @@ const WorkSingle = () => {
                   DRY!
                 </Text>
                 <Text variant="p">
-                  <Link to="https://netflix-andrew.web.app/#">
+                  <Link to="https://netflix-andrew.web.app/#" target="_blank">
                     View live demo.
                   </Link>
                 </Text>
@@ -71,7 +71,10 @@ const WorkSingle = () => {
               </Col>
 
               <Col lg="2">
-                <Link to="https://github.com/ogAndrew/netflix-clone">
+                <Link
+                  to="https://github.com/ogAndrew/netflix-clone"
+                  target="_blank"
+                >
                   <Button arrowRight>Github</Button>
                 </Link>
               </Col>

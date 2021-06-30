@@ -11,8 +11,6 @@ import { device } from "../../utils";
 
 import { menuItems } from "./menuItems";
 
-import { Text } from "../Core";
-
 const SiteHeader = styled.header`
   padding: 0;
   position: absolute !important;
@@ -238,7 +236,24 @@ const Header = ({ isDark }) => {
           <nav className="navbar px-0 px-md-3 site-navbar offcanvas-active navbar-expand-lg navbar-light">
             {/* <!-- Brand Logo--> */}
             <div className="brand-logo">
-              <Link to="/">Andrew</Link>
+              <Link
+                className="nav-item"
+                to="/"
+                role="button"
+                aria-expanded="false"
+                css={`
+                  font-size: 15px;
+                  font-weight: 700;
+                  line-height: 24px;
+                  padding-top: 18px !important;
+                  padding-bottom: 18px !important;
+                  padding-left: 18px !important;
+                  padding-right: 18px !important;
+                  text-transform: lowercase;
+                `}
+              >
+                Andrew Talle
+              </Link>
             </div>
             <div className="collapse navbar-collapse">
               <div className="navbar-nav ml-lg-auto mr-3">

@@ -1,9 +1,9 @@
-import React, { useState, useContext } from 'react'
-import styled from 'styled-components'
-import { ListGroup, Collapse } from 'react-bootstrap'
-import { FaAngleRight, FaAngleDown } from 'react-icons/fa'
-import { Link } from 'gatsby'
-import GlobalContext from '../../context/GlobalContext'
+import React, { useState, useContext } from "react";
+import styled from "styled-components";
+import { ListGroup, Collapse } from "react-bootstrap";
+import { FaAngleRight, FaAngleDown } from "react-icons/fa";
+import { Link } from "gatsby";
+import GlobalContext from "../../context/GlobalContext";
 
 const NestedMenuContainer = styled.div`
   a {
@@ -52,43 +52,43 @@ const NestedMenuContainer = styled.div`
   /* .list-group-flush:last-child .list-group-item:last-child {
     border-bottom-width: 1px;
   } */
-`
+`;
 
 const defaultMenuItems = [
-  { name: 'home', label: 'Home' },
+  { name: "home", label: "Home" },
   {
-    name: 'billing',
-    label: 'Billing',
+    name: "billing",
+    label: "Billing",
     items: [
-      { name: 'statements', label: 'Statements' },
-      { name: 'reports', label: 'Reports' },
+      { name: "statements", label: "Statements" },
+      { name: "reports", label: "Reports" },
     ],
   },
   {
-    name: 'settings',
-    label: 'Settings',
+    name: "settings",
+    label: "Settings",
     items: [
-      { name: 'profile', label: 'Profile' },
-      { name: 'insurance', label: 'Insurance' },
+      { name: "profile", label: "Profile" },
+      { name: "insurance", label: "Insurance" },
       {
-        name: 'notifications',
-        label: 'Notifications',
+        name: "notifications",
+        label: "Notifications",
         items: [
-          { name: 'email', label: 'Email' },
+          { name: "email", label: "Email" },
           {
-            name: 'desktop',
-            label: 'Desktop',
+            name: "desktop",
+            label: "Desktop",
             items: [
-              { name: 'schedule', label: 'Schedule' },
-              { name: 'frequency', label: 'Frequency' },
+              { name: "schedule", label: "Schedule" },
+              { name: "frequency", label: "Frequency" },
             ],
           },
-          { name: 'sms', label: 'SMS' },
+          { name: "sms", label: "SMS" },
         ],
       },
     ],
   },
-]
+];
 
 const MenuItem = ({
   label,
@@ -99,10 +99,10 @@ const MenuItem = ({
   depth = 0,
   ...rest
 }) => {
-  const [open, setOpen] = useState(false)
-  const hasSubItems = Array.isArray(items)
+  const [open, setOpen] = useState(false);
+  const hasSubItems = Array.isArray(items);
 
-  const gContext = useContext(GlobalContext)
+  const gContext = useContext(GlobalContext);
 
   return (
     <>
@@ -116,7 +116,7 @@ const MenuItem = ({
           `}
           onClick={() => setOpen(!open)}
           className={`d-flex align-items-center justify-content-between ${
-            open ? 'active' : ''
+            open ? "active" : ""
           }`}
         >
           <span>{label}</span>
@@ -135,7 +135,7 @@ const MenuItem = ({
               href={`${name}`}
               onClick={() => {
                 if (gContext.visibleOffCanvas) {
-                  gContext.toggleOffCanvas()
+                  gContext.toggleOffCanvas();
                 }
               }}
             >
@@ -146,7 +146,7 @@ const MenuItem = ({
               to={`/${name}`}
               onClick={() => {
                 if (gContext.visibleOffCanvas) {
-                  gContext.toggleOffCanvas()
+                  gContext.toggleOffCanvas();
                 }
               }}
             >
@@ -159,7 +159,7 @@ const MenuItem = ({
       {hasSubItems ? (
         <Collapse in={open}>
           <ListGroup>
-            {items.map(subItem => (
+            {items.map((subItem) => (
               <MenuItem
                 key={subItem.name}
                 depth={depth + 1}
@@ -171,11 +171,11 @@ const MenuItem = ({
         </Collapse>
       ) : null}
     </>
-  )
-}
+  );
+};
 
 const NestedMenu = ({ menuItems = defaultMenuItems }) => {
-  const gContext = useContext(GlobalContext)
+  const gContext = useContext(GlobalContext);
 
   return (
     <NestedMenuContainer>
@@ -188,55 +188,9 @@ const NestedMenu = ({ menuItems = defaultMenuItems }) => {
             {...menuItem}
           />
         ))}
-
-        {/* Open about modal */}
-        <ListGroup.Item
-          css={`
-            padding-left: 0px !important;
-            padding-right: 0 !important;
-          `}
-        >
-          {
-            <a
-              href="/#"
-              onClick={e => {
-                e.preventDefault()
-                gContext.toggleAbout()
-                if (gContext.visibleOffCanvas) {
-                  gContext.toggleOffCanvas()
-                }
-              }}
-            >
-              about me.
-            </a>
-          }
-        </ListGroup.Item>
-
-        {/* Open contact modal */}
-        <ListGroup.Item
-          css={`
-            padding-left: 0px !important;
-            padding-right: 0 !important;
-          `}
-        >
-          {
-            <a
-              href="/#"
-              onClick={e => {
-                e.preventDefault()
-                gContext.toggleContact()
-                if (gContext.visibleOffCanvas) {
-                  gContext.toggleOffCanvas()
-                }
-              }}
-            >
-              contact.
-            </a>
-          }
-        </ListGroup.Item>
       </ListGroup>
     </NestedMenuContainer>
-  )
-}
+  );
+};
 
-export default NestedMenu
+export default NestedMenu;

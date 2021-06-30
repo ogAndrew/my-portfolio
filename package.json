@@ -1,10 +1,9 @@
 {
-  "name": "folio-gatsby",
-  "description": "Folio Gatsby with Bootstrap 4, Styled Components, Slick Carousel, React Icons, React Headroom, etc",
+  "name": "andrew-portfolio",
+  "description": "Portfolio website with Bootstrap 4, Styled Components, Slick Carousel, React Icons, React Headroom, etc",
   "version": "1.0.0",
   "author": "grayic",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
     "@n8tb1t/use-scroll-position": "^1.0.43",
     "aos": "^3.0.0-beta.6",
     "babel-plugin-styled-components": "^1.10.6",

@@ -3,7 +3,7 @@ export const menuItems = [
     name: "projects",
     label: "projects",
     items: [
-      { name: "deep-space-robots", label: "Deep Space Robots" },
+      { name: "deep-space-robots", label: "Client Work" },
       { name: "destiny-chooser", label: "Destiny Chooser" },
       { name: "netflix-clone", label: "Netflix Clone" },
       { name: "devcamper-api", label: "Devcamper API" },

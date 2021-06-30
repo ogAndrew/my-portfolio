@@ -3,8 +3,7 @@ import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Section, Title, Text, Span } from "../../components/Core";
-import imgPhoto from "../../assets/image/jpg/talle-pic-small.jpg";
-
+import imgPhoto from "../../assets/image/jpg/happy-andrew-sm.jpg";
 
 const LinkSocial = styled.a`
   color: ${({ theme }) => theme.colors.light} !important;
@@ -14,8 +13,15 @@ const LinkSocial = styled.a`
   letter-spacing: 1.63px;
   transition: 0.4s;
   &:hover {
-    color: ${({ theme }) => theme.colors.light} !important;
+    color: ${({ theme }) => theme.colors.primary} !important;
     transform: translateY(-5px);
+  }
+`;
+
+const EmailLink = styled(Text)`
+  color: ${({ theme }) => theme.colors.light} !important;
+  &:hover {
+    color: ${({ theme }) => theme.colors.primary} !important;
   }
 `;
 
@@ -27,13 +33,22 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
           <Row className="align-items-center">
             <Col lg="6">
               <div>
-                <img src={imgPhoto} alt="folio" className="img-fluid" />
+                <img
+                  src={imgPhoto}
+                  alt="andrew with wife"
+                  className="img-fluid"
+                />
               </div>
             </Col>
             <Col lg="6">
               <div className="pl-lg-4 pt-5 pt-lg-0">
                 <Title color="light" variant="secSm">
-                  Andrew Talle
+                  <a
+                    href="https://www.youtube.com/watch?v=rEq1Z0bjdwc"
+                    target="_blank"
+                  >
+                    Hello there!
+                  </a>
                 </Title>
                 <Text
                   color="light"
@@ -42,24 +57,38 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                     line-height: 1.5;
                   `}
                 >
-                  Hey! I'm OG(original ginger) Andrew, a software developer based in Denver, CO.
-                  Previously @IBM + @deepspacerobots.
+                  I’m Andrew, but my friends call me OG (original ginger). I’m a
+                  finance major turned software developer currently based in
+                  Denver, CO. Previously @IBM and @deepspacerobots.
                 </Text>
+                <Text
+                  color="light"
+                  className="mt-4 mt-lg-4"
+                  css={`
+                    line-height: 1.5;
+                  `}
+                >
+                  When I’m not in the terminal, you can find me outdoors with my
+                  wife, Amanda, or working on my golf swing.
+                </Text>
+
                 <Text color="light" className="mt-4">
-                  I am currently on the hunt for my next opportunity. Available
-                  for hire.
+                  I'm currently on the hunt for my next opportunity. If you
+                  would like to connect (or grab a coffee) please don't
+                  hestitate to reach out!
                 </Text>
                 <div className="mt-4">
                   <Text color="light">Email me at</Text>
 
-                  <Text variant="p">
+                  <EmailLink variant="p">
+                    {" "}
                     <a
                       href="mailto:hello@andrewtalle.io"
                       className="font-weight-bold"
                     >
-                      <Span color="light">hello@andrewtalle.io</Span>
+                      <Span>hello@andrewtalle.io</Span>
                     </a>
-                  </Text>
+                  </EmailLink>
                 </div>
 
                 <div className="mt-5 d-flex">
@@ -75,7 +104,7 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                     href="https://twitter.com/andrewtalle"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" mr-3"
+                    className="mr-3"
                   >
                     Twitter
                   </LinkSocial>
@@ -83,7 +112,7 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                     href="https://github.com/ogAndrew"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className=" mr-3"
+                    className="mr-3"
                   >
                     GitHub
                   </LinkSocial>

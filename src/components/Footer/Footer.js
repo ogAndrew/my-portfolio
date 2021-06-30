@@ -24,7 +24,7 @@ const Footer = ({ isDark = true }) => {
               `}
               className="text-uppercase"
             >
-              © 2021 All right reseved
+              © 2021 OG Andrew LLC
             </Title>
           </div>
         </Container>

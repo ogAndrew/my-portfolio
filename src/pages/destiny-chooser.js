@@ -45,7 +45,10 @@ const WorkSingle = () => {
                   implementing the toggler from scratch.
                 </Text>
                 <Text variant="p">
-                  <Link to="https://ogandrew.github.io/destiny-chooser/">
+                  <Link
+                    to="https://ogandrew.github.io/destiny-chooser/"
+                    target="_blank"
+                  >
                     View live demo.
                   </Link>
                 </Text>
@@ -79,7 +82,10 @@ const WorkSingle = () => {
 
               <Col lg="2"></Col>
               <Col lg="2">
-                <Link to="https://github.com/ogAndrew/jedi-sith">
+                <Link
+                  to="https://github.com/ogAndrew/jedi-sith"
+                  target="_blank"
+                >
                   <Button arrowRight>View code</Button>
                 </Link>
               </Col>

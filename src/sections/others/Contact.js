@@ -6,6 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Section, Title, Text, Span, Box } from "../../components/Core";
 import ContactForm from "../../components/ContactForm";
 import { device } from "../../utils";
+import myResume from "../../assets/Talle_Resume.pdf";
 
 const ContactCard = styled.div`
   border-radius: 10px;
@@ -25,30 +26,33 @@ const Contact = ({ hero = true, bg = "dark", ...rest }) => {
             <Col lg="6">
               <Box className="pr-lg-5">
                 <Title color="light" variant="secSm" mb="2rem">
-                  Contact now
+                  Let's Connect
                 </Title>
-                <Text color="light" mb="2.75rem">
-                  Have a project or question? Send me a message. I will reply
-                  within 48 hours.
-                </Text>
                 <ContactForm theme="dark" />
               </Box>
             </Col>
             <Col lg="5">
               <ContactCard className="p-5 ml-lg-5">
                 <div>
-                  <Text color="light">Email me at</Text>
+                  <Text color="light">Email</Text>
 
-                  <a href="mailto:hello@andrewtalle.io" className="font-weight-bold">
+                  <a
+                    href="mailto:hello@andrewtalle.io"
+                    className="font-weight-bold"
+                  >
                     <Span color="primary">hello@andrewtalle.io</Span>
                   </a>
                 </div>
                 <div className="mt-5">
-                  <Text color="light">Call me at</Text>
+                  <Text color="light">Resume</Text>
 
                   <div>
-                    <a href="tel:+1-614-378-6205" className="font-weight-bold">
-                      <Span color="primary">+1-614-378-6205</Span>
+                    <a
+                      href={myResume}
+                      className="font-weight-bold"
+                      download="Talle_Resume.pdf"
+                    >
+                      <Span color="primary">Download PDF</Span>
                     </a>
                   </div>
                 </div>

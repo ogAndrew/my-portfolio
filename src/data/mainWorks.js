@@ -23,7 +23,7 @@ export const mainWorks = [
     link: "/destiny-chooser",
   },
   {
-    brand: `Deep Space Robots`,
+    brand: `Client Work`,
     slug: `deep-space-robots`,
     title: `Creative agency I contracted for on multiple mvp platforms over the course of 3 months.`,
     categories: [`react`],

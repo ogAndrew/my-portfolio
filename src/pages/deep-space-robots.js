@@ -28,7 +28,7 @@ const WorkSingle = () => {
               <Col lg="8">
                 <Text variant="tag">Deep Space Robots</Text>
                 <Title variant="secSm" className="my-4">
-                  Three months, three MVPs
+                  Three months, two MVPs
                 </Title>
 
                 <Text
@@ -73,7 +73,7 @@ const WorkSingle = () => {
               </Col>
 
               <Col lg="2">
-                <Link to="https://www.deepspacerobots.com/">
+                <Link to="https://www.deepspacerobots.com/" target="_blank">
                   <Button arrowRight>Client Website</Button>
                 </Link>
               </Col>

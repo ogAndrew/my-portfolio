@@ -35,7 +35,10 @@ const WorkSingle = () => {
                   about the geographic region that zip code represents.
                 </Text>
                 <Text variant="p">
-                  <Link to="https://ogandrew.github.io/zip-finder/">
+                  <Link
+                    to="https://ogandrew.github.io/zip-finder/"
+                    target="_blank"
+                  >
                     View live demo.
                   </Link>
                 </Text>
@@ -67,7 +70,10 @@ const WorkSingle = () => {
               </Col>
 
               <Col lg="2">
-                <Link to="https://github.com/ogAndrew/zip-finder">
+                <Link
+                  to="https://github.com/ogAndrew/zip-finder"
+                  target="_blank"
+                >
                   <Button arrowRight>Github</Button>
                 </Link>
               </Col>

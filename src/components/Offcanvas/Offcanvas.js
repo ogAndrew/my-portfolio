@@ -1,7 +1,7 @@
-import React from 'react'
-import { Container } from 'react-bootstrap'
-import styled from 'styled-components'
-import Logo from '../Logo'
+import React from "react";
+import { Container } from "react-bootstrap";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 const Overlay = styled.div`
   position: fixed;
@@ -19,7 +19,7 @@ const Overlay = styled.div`
     opacity: 0;
     visibility: hidden;
   }
-`
+`;
 
 const Drawer = styled.div`
   position: fixed;
@@ -43,12 +43,12 @@ const Drawer = styled.div`
     transform: initial !important;
     float: none !important;
   }
-`
+`;
 
 const LogoContainer = styled.div`
   font-weight: 600;
   font-size: 1.25rem;
-`
+`;
 
 const CloseWrapper = styled.div`
   cursor: pointer;
@@ -59,9 +59,9 @@ const CloseWrapper = styled.div`
   justify-content: center;
   z-index: 10;
   color: ${({ theme }) => theme.colors.dark};
-`
+`;
 
-const CloseButton = props => (
+const CloseButton = (props) => (
   <CloseWrapper {...props}>
     <svg
       role="img"
@@ -81,28 +81,44 @@ const CloseButton = props => (
       ></path>
     </svg>
   </CloseWrapper>
-)
+);
 
 const Offcanvas = ({ show, onHideOffcanvas, children, ...rest }) => {
-  if (typeof document !== 'undefined') {
+  if (typeof document !== "undefined") {
     if (show) {
-      document.querySelector('html').classList.add('has-offcanvas')
-      document.body.classList.add('has-offcanvas')
+      document.querySelector("html").classList.add("has-offcanvas");
+      document.body.classList.add("has-offcanvas");
     } else {
-      document.querySelector('html').classList.remove('has-offcanvas')
-      document.body.classList.remove('has-offcanvas')
+      document.querySelector("html").classList.remove("has-offcanvas");
+      document.body.classList.remove("has-offcanvas");
     }
   }
 
   return (
     <div {...rest}>
-      <Overlay className={show ? '' : 'hidden'} onClick={onHideOffcanvas} />
-      <Drawer className={show ? '' : 'hidden'}>
+      <Overlay className={show ? "" : "hidden"} onClick={onHideOffcanvas} />
+      <Drawer className={show ? "" : "hidden"}>
         <Container>
           <div className="p-3">
             <div className="mb-3 d-flex align-items-center justify-content-between">
               <LogoContainer>
-                <Logo onClick={onHideOffcanvas} />
+                <Link
+                  className="nav-item"
+                  to="/"
+                  role="button"
+                  aria-expanded="false"
+                  css={`
+                    color: #161c2d !important;
+                    font-size: 15px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    padding-top: 18px !important;
+                    padding-bottom: 18px !important;
+                    text-transform: titlecase;
+                  `}
+                >
+                  Andrew Talle
+                </Link>
               </LogoContainer>
               <CloseButton onClick={onHideOffcanvas} />
             </div>
@@ -112,7 +128,7 @@ const Offcanvas = ({ show, onHideOffcanvas, children, ...rest }) => {
         </Container>
       </Drawer>
     </div>
-  )
-}
+  );
+};
 
-export default Offcanvas
+export default Offcanvas;

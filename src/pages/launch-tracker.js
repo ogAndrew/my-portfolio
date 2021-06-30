@@ -66,7 +66,10 @@ const WorkSingle = () => {
               </Col>
 
               <Col lg="2">
-                <Link to="https://github.com/ogAndrew/nasa-project">
+                <Link
+                  to="https://github.com/ogAndrew/nasa-project"
+                  target="_blank"
+                >
                   <Button arrowRight>Github</Button>
                 </Link>
               </Col>

@@ -69,7 +69,9 @@ const WorkSingle = () => {
                   </ul>
                 </Text>
                 <Text variant="p">
-                  <Link to="http://143.198.157.97/">View live demo.</Link>
+                  <Link to="http://143.198.157.97/" target="_blank">
+                    View live demo.
+                  </Link>
                 </Text>
               </Col>
             </Row>
@@ -99,7 +101,10 @@ const WorkSingle = () => {
                 </Title>
               </Col>
               <Col lg="2">
-                <Link to="https://github.com/ogAndrew/devcamper-api">
+                <Link
+                  to="https://github.com/ogAndrew/devcamper-api"
+                  target="_blank"
+                >
                   <Button arrowRight>Github</Button>
                 </Link>
               </Col>
