@@ -75,7 +75,7 @@ const About = ({ hero = true, bg = "dark", ...rest }) => {
                 <Text color="light" className="mt-4">
                   I'm currently on the hunt for my next opportunity. If you
                   would like to connect (or grab a coffee) please don't
-                  hestitate to reach out!
+                  hesitate to reach out!
                 </Text>
                 <div className="mt-4">
                   <Text color="light">Email me at</Text>

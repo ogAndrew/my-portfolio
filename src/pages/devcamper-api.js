@@ -33,7 +33,7 @@ const WorkSingle = () => {
                 >
                   This project comes from my desire to learn how to build APIs
                   in Node.js. It is the capstone project from Brad Travery’s
-                  Node js API Masterclass.
+                  Node.js API Masterclass.
                 </Text>
                 <Text
                   variant="p"
