@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Section, Title, Text, Span, Box } from "../../components/Core";
 import ContactForm from "../../components/ContactForm";
 import { device } from "../../utils";
-import myResume from "../../assets/Talle_Resume.pdf";
+import myResume from "../../assets/Andrew-Talle_Resume.pdf";
 
 const ContactCard = styled.div`
   border-radius: 10px;
